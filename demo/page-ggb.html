@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>吉祥聚财</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<script src="../lib/zepto.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body ontouchstart>
+
+<section class="ui-container">
+
+	<section class="page-ggb">
+		<div class="top"><img src="../img/page/bg-top.png" alt=""></div>
+		<div class="foot"><img src="../img/page/bg-bottom.png" alt=""></div>
+		<div class="banner"><img src="../img/title/title-3.png" alt=""></div>
+
+		<ul class="ul">
+			<li><span>1、</span>您可以在下方“分销员”菜单中查看和管理您的分销及返佣情况。</li>
+			<li><span>2、</span>任何人扫描您的二维码并成功办理信用卡或贷款，您都可以获取相应的收益。（具体收益标准可以在对应菜单中查看）</li>
+			<li><span>3、</span>任何人通过扫描您的二维码成为分销员，则他/她将成为您的下一级分销员。</li>
+			<li><span>4、</span>在您的下一级分销员获取收益的同时，吉祥聚财将为您提供额外的奖励，这些奖励并不从您下一级分销员的收益中产生。（额外奖励的标准可以在对应菜单中查看）</li>
+		</ul>
+
+		<div class="title"><span>公告板</span></div>
+
+		<div class="bar">
+			<ul class="notice">
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+				<li>one two three four five six seven eight nine</li>
+			</ul>
+		</div>
+
+		<div class="btn-group">
+			<a class="btn btn-continue" href="#">点击继续</a>
+		</div>
+	</section>
+
+</section><!-- /.ui-container-->
+<script>
+	$(document).ready(function(){
+		var $page = $('.page-ggb');
+		var $ul = $page.find('.ul');
+		var $title = $page.find('.title');
+		var $btnGroup = $page.find('.btn-group');
+		var $notice = $page.find('.notice');
+		var wH = $(window).height();
+		var maxH = wH - 83 - $ul.height() - $title.height() - $btnGroup.height() - 68;
+		$notice.css('maxHeight', maxH);
+	})
+</script>
+</body>
+</html>

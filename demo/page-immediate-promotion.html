@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>吉祥聚财</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<script src="../lib/zepto.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body ontouchstart>
+
+<section class="ui-container">
+
+	<section class="page-immediate-promotion">
+		<div class="foot"><img src="../img/immediate-promotion/bg-bottom.png" alt=""></div>
+		<div class="bar-list">
+			<div class="top">
+				<img src="../img/immediate-promotion/bg-top.png" alt="">
+				<div class="banner"><img src="../img/title/title-4.png" alt=""></div>
+			</div>
+			<dl class="list">
+				<dt>模板一</dt>
+				<dd>
+					<a class="img"><img src="../img/immediate-promotion/1.png" alt=""></a>
+				</dd>
+				<dt>模板二</dt>
+				<dd>
+					<a class="img"><img src="../img/immediate-promotion/2.png" alt=""></a>
+				</dd>
+				<dt>模板三</dt>
+				<dd>
+					<a class="img"><img src="../img/immediate-promotion/3.png" alt=""></a>
+				</dd>
+				<dt>模板三</dt>
+				<dd>
+					<a class="img"><img src="../img/immediate-promotion/3.png" alt=""></a>
+				</dd>
+				<dt>模板三</dt>
+				<dd>
+					<a class="img"><img src="../img/immediate-promotion/3.png" alt=""></a>
+				</dd>
+				<dt>模板三</dt>
+				<dd>
+					<a class="img"><img src="../img/immediate-promotion/3.png" alt=""></a>
+				</dd>
+				<dt>模板三</dt>
+				<dd>
+					<a class="img"><img src="../img/immediate-promotion/3.png" alt=""></a>
+				</dd>
+				<dt>模板三</dt>
+				<dd>
+					<a class="img"><img src="../img/immediate-promotion/3.png" alt=""></a>
+				</dd>
+				<dt>模板三</dt>
+				<dd>
+					<a class="img"><img src="../img/immediate-promotion/3.png" alt=""></a>
+				</dd>
+				<dt>模板三</dt>
+				<dd>
+					<a class="img"><img src="../img/immediate-promotion/3.png" alt=""></a>
+				</dd>
+			</dl>
+		</div>
+	</section>
+
+</section><!-- /.ui-container-->
+<script>
+	$(document).ready(function(){
+		var $page = $('.page-immediate-promotion');
+		var $top = $page.find('.top');
+		var $img = $top.find('img');
+		var $list = $page.find('.bar-list');
+		if ($img[0].complete) {
+			imgLoad();
+		} else {
+			$img.on('load', function(){
+				imgLoad();
+			});
+		}
+
+		function imgLoad() {
+			var wH = $(window).height();
+			var maxH = wH - 10;
+			//$page.css('paddingTop', $top.height());
+			$list.css('maxHeight', maxH);
+		}
+	})
+</script>
+</body>
+</html>

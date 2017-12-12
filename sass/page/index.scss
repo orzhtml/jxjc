@@ -1,0 +1,31 @@
+*, *:after, *:before {
+	box-sizing: border-box
+}
+
+html, body, .ui-container {
+	background-color: #ffffff;
+	height: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+
+body, button, h1, h2, h3, h4, h5, h6, input, select, textarea {
+	font-family: Helvetica Neue, Helvetica, Arial, PingFang SC, STHeiTi, Simhei, sans-serif
+}
+
+img {
+	vertical-align: middle;
+}
+
+.page-directory {
+	.ui-list {
+	}
+	a {
+		display: block;
+		padding: 15px 0;
+		position: relative;
+		width: 100%;
+	}
+}

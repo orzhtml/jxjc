@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>吉祥聚财</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<script src="../lib/zepto.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body ontouchstart>
+
+<section class="ui-container">
+
+	<section class="page-payment-records">
+		<div class="top"><img src="../img/page/bg-top.png" alt=""></div>
+		<div class="foot"><img src="../img/page/bg-bottom.png" alt=""></div>
+		<div class="banner"><img src="../img/title/title-5.png" alt=""></div>
+
+		<div class="bar">
+			<div class="table-bar">
+				<div class="table-tt">
+					<div class="title">兑付时间</div>
+					<div class="title">兑付金额</div>
+					<div class="title">流程</div>
+					<div class="title">申诉</div>
+				</div>
+				<div class="table-bd" id="tableData">
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div>2017.06.07</div>
+						</li>
+						<li>
+							<div>5000</div>
+						</li>
+						<li>
+							<div>待审核</div>
+						</li>
+						<li>
+							<div><a class="complaint">申诉</a></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="btn-group">
+			<a class="btn btn-prev">上一页</a>
+			<a class="btn btn-next">下一页</a>
+		</div>
+		<div class="btn-group">
+			<a class="btn btn-refresh">刷新</a>
+			<a class="btn btn-return">返回</a>
+		</div>
+
+	</section>
+
+</section><!-- /.ui-container-->
+<script>
+	$(document).ready(function(){
+		var $page = $('.page-payment-records');
+		var $banner = $page.find('.banner');
+		var $tableBd = $page.find('.table-bd');
+		var wH = $(window).height();
+		var maxH = wH - 72 - 40 - 44 - 98;
+		$tableBd.css('maxHeight', maxH);
+
+		$('#tableData').off('click.complaint').on('click.complaint', '.complaint', function () {
+			var dia = $.dialog({
+				class_name: 'dia-complaint',
+				title: '申请成功',
+				content: '客服人员将尽快与您联系请保持通讯畅通！',
+				button: ['关闭']
+			});
+		});
+	})
+</script>
+</body>
+</html>

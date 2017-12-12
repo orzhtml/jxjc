@@ -1,0 +1,46 @@
+@import "../base/mixin",
+"../base/variable";
+
+.page-xyk {
+	.banner {
+		background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(167, 128, 49, 1));
+		box-shadow: 0 1px 10px #999;
+		height: 64px;
+		line-height: 64px;
+		text-align: center;
+
+		img {
+			max-height: 32px;
+		}
+	}
+
+	.ul-list {
+		padding: 15px 20px 5px;
+	}
+
+	li {
+		margin-bottom: 15px;
+		text-align: center;
+		img {
+			width: 100%;
+		}
+	}
+
+	.text {
+		background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(167, 128, 49, 1));
+		box-shadow: 1px 0 10px #999;
+		height: 54px;
+		line-height: 54px;
+		text-align: center;
+		width: 100%;
+		span {
+			background: url(../img/other/20170704180712.png) no-repeat center;
+			-webkit-background-size: 100%;
+			background-size: 100%;
+			display: inline-block;
+			height: 24px;
+			vertical-align: middle;
+			width: 255px;
+		}
+	}
+}

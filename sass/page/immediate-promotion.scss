@@ -1,0 +1,59 @@
+@import "../base/mixin",
+"../base/variable";
+
+.page-immediate-promotion {
+	background: url(../img/immediate-promotion/bg.png);
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	height: 100%;
+	overflow-y: auto;
+	position: relative;
+
+	.foot {
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		right: 0;
+		z-index: 0;
+	}
+
+	.banner {
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 192px;
+	}
+
+	.bar-list {
+		min-height: 200px;
+		overflow-y: auto;
+		position: relative;
+	}
+
+	.top {
+		box-shadow: 0 1px 10px #999;
+		position: relative;
+		z-index: 0;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	dl {
+		padding-top: 10px;
+	}
+
+	dt {
+		color: #393838;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	dd {
+		height: 143px;
+		margin: 5px auto 10px;
+		width: 148px;
+	}
+}

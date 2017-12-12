@@ -1,0 +1,124 @@
+@import "../base/mixin",
+"../base/variable";
+
+.page-apply-payment {
+	background: url(../img/page/bg.png) repeat-x;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	height: 100%;
+	overflow-y: auto;
+	padding-bottom: 10px;
+	position: relative;
+
+	.top {
+		left: 0;
+		position: fixed;
+		right: 0;
+		z-index: 0;
+	}
+
+	.foot {
+		bottom: 0;
+		left: 0;
+		position: fixed;
+		right: 0;
+		z-index: 0;
+	}
+
+	.banner {
+		margin: 0 auto;
+		padding-top: 24px;
+		position: relative;
+		width: 272px;
+		@media (max-width: 320px) {
+			width: 200px;
+		}
+	}
+
+	img {
+		width: 100%;
+	}
+
+	.cnt {
+		background-color: #ffffff;
+		box-shadow: 0 1px 10px #999;
+		color: #393838;
+		margin: 0 15px 0;
+		padding: 40px 20px;
+		position: relative;
+		top: 15%;
+		text-align: center;
+	}
+
+	.title {
+		font-size: 22px;
+		margin-top: 20px;
+		@media (max-width: 320px) {
+			font-size: 18px;
+		}
+	}
+
+	.entry-bar {
+		.title {
+			font-size: 20px;
+		}
+		.text {
+			font-size: 18px;
+			margin-top: 15px;
+		}
+		input {
+			box-shadow: 0 0 4px 0 #c8c8c8 inset;
+			color: #000000;
+			font-size: 18px;
+			height: 26px;
+			line-height: 26px;
+			margin-top: 5px;
+			text-align: center;
+			width: 130px;
+		}
+		.btn {
+			display: inline-block;
+			font-size: 18px;
+			margin: 20px 0 0;
+			width: 94px;
+			@media (max-width: 320px) {
+				width: 76px;
+			}
+		}
+	}
+
+	.successful-bar {
+		.title {
+			font-size: 26px;
+			font-weight: 700;
+		}
+		.text {
+			font-size: 14px;
+			margin-top: 15px;
+		}
+	}
+
+	.lack-bar {
+		.text {
+			display: inline-block;
+			font-size: 14px;
+			margin-top: 15px;
+			span {
+				color: #18c5df;
+			}
+		}
+	}
+
+	.btn {
+		background-color: #a78031;
+		border-radius: 100px;
+		color: #ffffff;
+		display: block;
+		font-size: 14px;
+		height: 32px;
+		line-height: 32px;
+		margin: 20px 15px 0;
+		text-align: center;
+	}
+
+}

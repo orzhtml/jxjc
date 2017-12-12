@@ -1,0 +1,22 @@
+@import
+
+"../base/mixin",
+"../base/variable";
+
+.page-tjwc {
+	background: url("../img/other/20170704180713.png") no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	height: 100%;
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
+
+
+	.content {
+		padding: 78px 55px;
+		width: 100%;
+	}
+}

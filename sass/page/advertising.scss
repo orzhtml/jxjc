@@ -1,0 +1,18 @@
+@import "../base/mixin",
+"../base/variable";
+
+.page-advertising {
+	padding-top: 10px;
+	.ul-list {
+		padding: 10px;
+		text-align: center;
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+}

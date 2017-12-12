@@ -1,0 +1,55 @@
+@import
+
+    "../base/mixin",
+    "../base/variable";
+
+.page-start {
+	background: url("../img/start/bg.png") no-repeat;
+	-webkit-background-size: 100%;
+	background-size: 100%;
+	height: 100%;
+	width: 100%;
+
+	img {
+		width: 100%;
+	}
+
+	.title {
+		background: url("../img/start/title.png") no-repeat center bottom;
+		-webkit-background-size: 100%;
+		background-size: 100%;
+		display: block;
+		height: 32px;
+		margin: 0 auto;
+		padding-top: 20px;
+		width: 209px;
+	}
+
+	.content {
+		padding-top: 20px;
+		width: 100%;
+	}
+
+	.foot {
+		bottom: 100px;
+		left: 50%;
+		position: absolute;
+		transform: translate(-50%, 0);
+	}
+
+	.statistical {
+		color: #be9035;
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.btn {
+		background: url("../img/start/btn.png") no-repeat center;
+		-webkit-background-size: 225px 48px;
+		background-size: 225px 48px;
+		display: block;
+		height: 50px;
+		margin: 10px auto 0;
+		width: 230px;
+	}
+}

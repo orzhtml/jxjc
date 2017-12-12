@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<title>吉祥聚财</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<script src="../lib/zepto.min.js"></script>
+	<script src="../js/common.js"></script>
+</head>
+
+<body ontouchstart>
+
+<section class="ui-container">
+
+	<section class="page-team">
+		<div class="top"><img src="../img/page/bg-top.png" alt=""></div>
+		<div class="foot"><img src="../img/page/bg-bottom.png" alt=""></div>
+		<div class="banner"><img src="../img/title/title-8.png" alt=""></div>
+		<div class="bar">
+			<div class="table-bar">
+				<div class="table-tt">
+					<div class="title">分销员姓名</div>
+					<div class="title">注册时间</div>
+					<div class="title">贡献收益</div>
+				</div>
+				<div class="table-bd">
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+					<ul>
+						<li><div>赵**</div></li>
+						<li><div>2017.06.06</div></li>
+						<li><div>000000.00</div></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="btn-group">
+			<a class="btn btn-prev">按时间排序</a>
+			<a class="btn btn-next">按贡献排序</a>
+		</div>
+		<div class="btn-group">
+			<a class="btn btn-refresh">刷新</a>
+			<a class="btn btn-return">返回</a>
+		</div>
+
+	</section>
+
+</section><!-- /.ui-container-->
+<script>
+	$(document).ready(function(){
+		var $page = $('.page-team');
+		var $tableBd = $page.find('.table-bd');
+		var wH = $(window).height();
+		var maxH = wH - 72 - 40 - 45 - 98;
+		$tableBd.css('maxHeight', maxH);
+	})
+</script>
+</body>
+</html>

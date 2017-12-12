@@ -1,0 +1,90 @@
+@import "../base/mixin",
+"../base/variable";
+
+.page-jsd {
+	padding-top: 64px;
+	.banner {
+		background-color: #264257;
+		box-shadow: 0 1px 10px #999;
+		height: 64px;
+		line-height: 64px;
+		position: absolute;
+		text-align: center;
+		left: 0;
+		top: 0;
+		right: 0;
+
+		img {
+			max-height: 32px;
+		}
+	}
+
+	.ul-list {
+		li {
+			padding: 10px 0;
+			text-align: center;
+
+			&.light-blue {
+				padding-top: 30px;
+			}
+		}
+	}
+
+	.cnt {
+		text-align: center;
+	}
+
+	.light-blue {
+		background-color: #179bdb;
+		padding-top: 30px;
+		img {
+			max-height: 42px;
+		}
+	}
+
+	.purple {
+		background-color: #9494d0;
+		img {
+			max-height: 94px;
+		}
+	}
+
+	.deep-blue {
+		background-color: #3d89d5;
+		img {
+			max-height: 50px;
+		}
+	}
+
+	.title {
+		color: #ffffff;
+		font-size: 12px;
+		font-weight: 700;
+		padding: 10px 20px;
+		text-align: center;
+	}
+
+	.btn {
+		color: #ffffff;
+		display: block;
+		height: 26px;
+		line-height: 26px;
+		margin: 10px auto 0;
+		text-align: center;
+		width: 126px;
+	}
+
+	.icon {
+		background: no-repeat center;
+		-webkit-background-size: 100%;
+		background-size: 100%;
+		display: block;
+		height: 22px;
+		margin: 10px auto 0;
+		width: 22px;
+	}
+
+	.icon-arrow-down {
+		background-image: url(../img/icon/icon-arrow-down.png);
+	}
+}

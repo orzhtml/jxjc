@@ -1,0 +1,76 @@
+@import "../base/mixin",
+"../base/variable";
+
+.page-ljkqxysh {
+	padding-bottom: 60px;
+	img {
+		width: 100%;
+	}
+
+	.content {
+		dt {
+			color: #a78031;
+			font-size: 16px;
+			margin-top: 24px;
+			text-align: center;
+			&:before, &:after {
+				background: no-repeat;
+				-webkit-background-size: 100%;
+				background-size: 100%;
+				content: '';
+				display: inline-block;
+				height: 12px;
+				width: 12px;
+			}
+
+			&:before {
+				background-image: url(../img/icon/icon-square-solid.png);
+				margin-right: 15px;
+			}
+
+			&:after {
+				background-image: url(../img/icon/icon-square-hollow.png);
+				margin-left: 15px;
+			}
+
+			&.title-two {
+				&:before {
+					background-image: url(../img/icon/icon-square-hollow.png);
+				}
+
+				&:after {
+					background-image: url(../img/icon/icon-square-solid.png);
+				}
+			}
+		}
+
+		dd {
+			color: #303030;
+			font-size: 12px;
+			margin-top: 12px;
+			padding: 0 10px;
+		}
+	}
+
+	.tips {
+		color: #a78031;
+		font-size: 12px;
+		margin: 20px auto 0;
+		text-align: center;
+		width: 275px;
+	}
+
+	.btn {
+		background-color: #a78031;
+		border-radius: 100px;
+		bottom: 20px;
+		color: #ffffff;
+		display: block;
+		height: 32px;
+		line-height: 32px;
+		left: 30px;
+		right: 30px;
+		position: fixed;
+		text-align: center;
+	}
+}

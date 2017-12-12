@@ -1,0 +1,149 @@
+@import "../base/mixin",
+"../base/variable";
+
+.page-tjzl {
+	padding-bottom: 60px;
+	img {
+		width: 100%;
+	}
+
+	.tips {
+		color: #a78031;
+		font-size: 12px;
+		padding: 10px 30px 20px;
+	}
+
+	.icon {
+		background: no-repeat;
+		-webkit-background-size: 100%;
+		background-size: 100%;
+		bottom: 5px;
+		display: block;
+		height: 22px;
+		left: 10px;
+		position: absolute;
+		width: 22px;
+	}
+
+	.icon-people {
+		background-image: url(../img/icon/icon-people.png);
+	}
+
+	.icon-phone {
+		background-image: url(../img/icon/icon-phone.png);
+	}
+
+	.icon-card {
+		background-image: url(../img/icon/icon-card.png);
+	}
+
+	.icon-city {
+		background-image: url(../img/icon/icon-city.png);
+	}
+
+	.ui-form {
+		border-radius: 6px;
+		box-shadow:0 0 15px #888;
+		margin: 10px 34px 25px;
+		padding: 0 20px 20px;
+	}
+
+	.ui-form-item {
+		input {
+			font-size: 12px;
+			height: 28px;
+			line-height: 28px;
+			padding-left: 30px;
+			width: 100%;
+			vertical-align: bottom;
+		}
+	}
+
+	.ui-list {
+		padding-left: 30px;
+	}
+
+	.ui-checkbox {
+		color: #a78031;
+		display: flex;
+		align-items: center;
+		font-size: 12px;
+		input {
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			position: relative;
+			overflow: visible;
+			border: 0;
+			background: 0 0;
+			-webkit-appearance: none;
+			outline: 0;
+			margin-right: 8px;
+			vertical-align: middle;
+
+			&:before {
+				content: '';
+				display: block;
+				width: 12px;
+				height: 12px;
+				border: 1px solid #a78031;
+				-webkit-background-clip: padding-box;
+				background-clip: padding-box;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			&:checked:after {
+				background: url(../img/icon/icon-checked.png) no-repeat;
+				-webkit-background-size: 100%;
+				background-size: 100%;
+				content: '';
+				display: block;
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				left: -2px;
+				top: -4px;
+			}
+		}
+	}
+
+	.title {
+		color: #a78031;
+		font-size: 16px;
+		margin: 15px auto;
+		text-align: center;
+	}
+
+	.ul {
+		padding-left: 30px;
+		> li {
+			color: #a78031;
+			font-size: 12px;
+			padding: 0 30px 0 15px;
+			position: relative;
+			span {
+				display: block;
+				height: 18px;
+				line-height: 18px;
+				left: 0;
+				position: absolute;
+				top: 0;
+			}
+		}
+	}
+
+	.btn {
+		background-color: #a78031;
+		border-radius: 100px;
+		bottom: 20px;
+		color: #ffffff;
+		display: block;
+		height: 32px;
+		line-height: 32px;
+		left: 30px;
+		right: 30px;
+		position: fixed;
+		text-align: center;
+	}
+}
